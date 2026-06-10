@@ -1,7 +1,12 @@
+import { base } from '$app/paths';
 import { galleryManifest } from '$lib/data/gallery-manifest.js';
 
+/** @param {string} path */
+const withBase = (path) => `${base}${path}`;
+
 /** @param {string} projectId */
-export const getProjectImages = (projectId) => galleryManifest[projectId] ?? [];
+export const getProjectImages = (projectId) =>
+	(galleryManifest[projectId] ?? []).map(withBase);
 
 /** @param {string} projectId */
 export const hasProjectImages = (projectId) => getProjectImages(projectId).length > 0;
