@@ -7,7 +7,7 @@ const config = {
 			fallback: 'index.html'
 		}),
 		paths: {
-			base: '/portfolio'
+			base: ''
 		},
 		alias: {
 			$lib: 'src/lib',
