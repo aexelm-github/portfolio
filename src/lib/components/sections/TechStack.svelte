@@ -1,6 +1,7 @@
 <script>
 	import { t } from '$lib/i18n/index.js';
 	import { techStack } from '$lib/data/tech.js';
+	import { techIcons } from '$lib/data/tech-icons.js';
 	import SectionLabel from '$lib/components/ui/SectionLabel.svelte';
 	import { onMount } from 'svelte';
 
@@ -67,7 +68,17 @@
 								class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-all duration-200 hover:scale-105"
 								style="background: {color.bg}; border: 1px solid {color.border}; color: {tech.featured ? 'var(--c-text-primary)' : 'var(--c-text-muted)'};"
 							>
-								<span class="tech-icon">{tech.icon}</span>
+								{#if techIcons[tech.name]}
+									{@const brand = techIcons[tech.name]}
+									<svg
+										class="tech-svg"
+										viewBox={brand.viewBox}
+										aria-hidden="true"
+										style="color: var(--c-text-primary); {brand.color ? `fill: ${brand.color};` : ''}"
+									>{@html brand.body}</svg>
+								{:else}
+									<span class="tech-icon">{tech.icon}</span>
+								{/if}
 								<span>{tech.name}</span>
 								{#if tech.featured}
 									<span class="w-1 h-1 rounded-full ml-0.5" style="background: {color.dot};"></span>
@@ -117,6 +128,12 @@
 	@keyframes pulse-badge {
 		0%, 100% { opacity: 0.85; }
 		50%       { opacity: 1; }
+	}
+
+	.tech-svg {
+		width: 14px;
+		height: 14px;
+		flex-shrink: 0;
 	}
 
 	.tech-icon {
