@@ -150,7 +150,56 @@
 				<rect x="326" y="62" width="44" height="20" rx="3" fill="rgba(16,185,129,0.08)"/>
 				<rect x="328" y="78" width="36" height="2" rx="1" fill="#475569" opacity="0.3"/>
 			</svg>`,
-		indra: `
+		'ap-pilot': `
+				<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+					<defs>
+						<linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%" style="stop-color:#a855f7;stop-opacity:0.14"/>
+							<stop offset="100%" style="stop-color:#7e22ce;stop-opacity:0.04"/>
+						</linearGradient>
+					</defs>
+					<rect width="400" height="220" fill="url(#g5)" rx="8"/>
+					<!-- Map grid -->
+					<g opacity="0.18">
+						<line x1="0" y1="55" x2="400" y2="55" stroke="#a855f7" stroke-width="0.5"/>
+						<line x1="0" y1="110" x2="400" y2="110" stroke="#a855f7" stroke-width="0.5"/>
+						<line x1="0" y1="165" x2="400" y2="165" stroke="#a855f7" stroke-width="0.5"/>
+						<line x1="100" y1="0" x2="100" y2="220" stroke="#a855f7" stroke-width="0.5"/>
+						<line x1="200" y1="0" x2="200" y2="220" stroke="#a855f7" stroke-width="0.5"/>
+						<line x1="300" y1="0" x2="300" y2="220" stroke="#a855f7" stroke-width="0.5"/>
+					</g>
+					<!-- Clusters -->
+					<circle cx="70" cy="60" r="18" fill="#a855f7" opacity="0.25"/>
+					<circle cx="70" cy="60" r="11" fill="#a855f7" opacity="0.7"/>
+					<circle cx="150" cy="130" r="22" fill="#a855f7" opacity="0.25"/>
+					<circle cx="150" cy="130" r="14" fill="#c084fc" opacity="0.7"/>
+					<circle cx="60" cy="150" r="12" fill="#a855f7" opacity="0.25"/>
+					<circle cx="60" cy="150" r="7" fill="#d8b4fe" opacity="0.7"/>
+					<circle cx="200" cy="55" r="9" fill="#a855f7" opacity="0.25"/>
+					<circle cx="200" cy="55" r="5" fill="#d8b4fe" opacity="0.7"/>
+					<circle cx="110" cy="190" r="5" fill="#e9d5ff" opacity="0.6"/>
+					<circle cx="215" cy="175" r="4" fill="#e9d5ff" opacity="0.5"/>
+					<!-- Phone -->
+					<rect x="270" y="20" width="96" height="180" rx="14" fill="rgba(10,10,15,0.9)" stroke="rgba(168,85,247,0.35)" stroke-width="1.5"/>
+					<rect x="278" y="34" width="80" height="152" rx="7" fill="rgba(20,20,30,0.8)"/>
+					<rect x="284" y="42" width="68" height="8" rx="3" fill="rgba(168,85,247,0.45)"/>
+					<rect x="284" y="58" width="68" height="24" rx="4" fill="rgba(168,85,247,0.1)" stroke="rgba(168,85,247,0.2)" stroke-width="1"/>
+					<rect x="290" y="64" width="40" height="3" rx="1.5" fill="#a855f7" opacity="0.7"/>
+					<rect x="290" y="72" width="28" height="2.5" rx="1.25" fill="#475569" opacity="0.5"/>
+					<rect x="284" y="90" width="68" height="16" rx="3" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+					<circle cx="292" cy="98" r="3" fill="#10b981" opacity="0.8"/>
+					<rect x="299" y="96" width="34" height="2.5" rx="1.25" fill="#94a3b8" opacity="0.6"/>
+					<rect x="284" y="110" width="68" height="16" rx="3" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+					<circle cx="292" cy="118" r="3" fill="#f59e0b" opacity="0.8"/>
+					<rect x="299" y="116" width="28" height="2.5" rx="1.25" fill="#94a3b8" opacity="0.6"/>
+					<!-- Sync badge -->
+					<rect x="284" y="150" width="68" height="22" rx="5" fill="rgba(16,185,129,0.14)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+					<rect x="292" y="159" width="36" height="3" rx="1.5" fill="#10b981" opacity="0.8"/>
+					<!-- Sync link map -> phone -->
+					<line x1="215" y1="120" x2="268" y2="120" stroke="#a855f7" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+					<polygon points="268,116 276,120 268,124" fill="#a855f7" opacity="0.5"/>
+				</svg>`,
+			indra: `
 			<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
 				<defs>
 					<linearGradient id="g4" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -260,7 +309,25 @@
 							<p class="text-xs text-slate-400 leading-relaxed">{project.impact}</p>
 						</div>
 
-						<!-- Tags + Stack -->
+						{#if project.repo}
+								<a
+									href={project.repo}
+									target="_blank"
+									rel="noopener noreferrer"
+									class="repo-link mb-4 inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors"
+									style="color: {project.color}; background: {project.color}10; border: 1px solid {project.color}25;"
+								>
+									<svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+										<path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+									</svg>
+									{$t.projects.repo_btn}
+									<svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+										<path d="M4 10L10 4M5 4h5v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</a>
+							{/if}
+
+							<!-- Tags + Stack -->
 						<div class="flex flex-wrap gap-1.5 mb-3">
 							{#each project.tags.slice(0, 4) as tag (tag)}
 								<span class="px-2 py-0.5 rounded text-xs text-slate-500"

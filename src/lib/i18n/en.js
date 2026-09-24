@@ -73,6 +73,7 @@ export const en = {
 		impact_label: 'Impact',
 		stack_label: 'Stack',
 		gallery_btn: 'View project gallery',
+		repo_btn: 'View showcase repository',
 		items: [
 			{
 				id: 'simplify',
@@ -85,8 +86,24 @@ export const en = {
 					'Used in research with 500,000+ records. Reduces weeks of analysis to hours.',
 				tags: ['Multi-database', 'Dashboards', 'Analytics', 'Visualization', 'Advanced filters'],
 				stack: ['SvelteKit', 'JavaScript', 'MySQL', 'TailwindCSS', 'Node.js'],
+				repo: 'https://github.com/aexelm-github/simplify2plus-showcase',
 				featured: true,
 				color: '#06b6d4'
+			},
+			{
+				id: 'ap-pilot',
+				title: 'AP-PILOT+',
+				company: 'Multi-tenant SaaS platform',
+				category: 'SaaS · GIS & Field Operations',
+				description:
+					'Multi-tenant platform for end-to-end public lighting management: georeferenced inventory, citizen requests (PQR), work orders, warehouse and dynamic censuses, with an offline-first mobile app for field crews.',
+				impact:
+					'35,000+ streetlights of a single municipality on one map, with dynamic clustering, vector tiles and offline sync.',
+				tags: ['GIS', 'Multi-tenant', 'Offline-first', 'RBAC', 'Dynamic censuses'],
+				stack: ['SvelteKit', 'Express', 'PostGIS', 'Flutter'],
+				repo: 'https://github.com/aexelm-github/ap-pilot-plus-showcase',
+				featured: true,
+				color: '#a855f7'
 			},
 			{
 				id: 'conlus',
@@ -326,6 +343,8 @@ export const en = {
 		cta: 'Send message',
 		or: 'or connect on',
 		copy_email: 'Copy email',
-		copied: 'Copied!'
+		copied: 'Copied!',
+		github_note:
+			'Due to copyright reasons, only a few projects are published on GitHub, as showcase versions.'
 	}
 };

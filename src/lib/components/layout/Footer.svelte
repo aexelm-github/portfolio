@@ -4,8 +4,8 @@
 	const year = new Date().getFullYear();
 
 	const links = [
-		{ href: 'https://linkedin.com/in/exelavendano', label: 'LinkedIn' },
-		{ href: 'https://github.com/aexelm', label: 'GitHub' },
+		{ href: 'https://www.linkedin.com/in/exel-avenda%C3%B1o-224577245', label: 'LinkedIn' },
+		{ href: 'https://github.com/aexelm-github', label: 'GitHub', note: true },
 		{ href: 'mailto:exel.avendano@gmail.com', label: 'Email' }
 	];
 </script>
@@ -29,6 +29,7 @@
 						href={link.href}
 						target={link.href.startsWith('http') ? '_blank' : undefined}
 						rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+						title={link.note ? $t.contact.github_note : undefined}
 						class="footer-link text-sm transition-colors"
 					>
 						{link.label}
