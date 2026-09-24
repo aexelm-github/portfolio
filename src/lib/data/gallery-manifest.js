@@ -57,6 +57,11 @@ export const galleryManifest = {
 		"/projects/chatia/001-chrome_rA1eFSz1Tf.gif",
 		"/projects/chatia/002-chrome_12ZkyKEKBp.gif"
 	],
+	"grupoenercas": [
+		"/projects/grupoenercas/001-grupoenercas.png",
+		"/projects/grupoenercas/002-grupoenercas.png",
+		"/projects/grupoenercas/003-grupoenercas.png"
+	],
 	"simplify2": [
 		"/projects/simplify2/001-capture.gif"
 	],

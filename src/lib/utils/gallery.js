@@ -14,6 +14,7 @@ export const hasProjectImages = (projectId) => getProjectImages(projectId).lengt
 /** @param {string} id */
 export const galleryPlaceholder = (id) => {
 	const colors = {
+		grupoenercas: ['#0ea5e9', '#0369a1'],
 		simplify2: ['#06b6d4', '#0e7490'],
 		'alumbrado-web': ['#6366f1', '#4f46e5'],
 		'alumbrado-mobile': ['#10b981', '#059669'],

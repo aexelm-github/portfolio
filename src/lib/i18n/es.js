@@ -140,6 +140,11 @@ export const es = {
 		captures: 'capturas',
 		items: [
 			{
+				id: 'grupoenercas',
+				title: 'Sitio Web GrupoEnercas',
+				desc: 'Sitio web corporativo desarrollado para la compañía GrupoEnercas a través de NeedCrave, que presenta la empresa, sus servicios y proyectos.'
+			},
+			{
 				id: 'simplify2',
 				title: 'Simplify2+',
 				desc: 'Plataforma SaaS para cruce y análisis de datos entre múltiples bases de datos con dashboards interactivos.'
@@ -216,7 +221,7 @@ export const es = {
 				id: 'conlus-dir',
 				role: 'Director de Tecnología',
 				company: 'Consorcio Santa Marta Iluminada y Segura (CONLUS)',
-				period: '2020 — Presente',
+				period: '2020 — Mayo 2026',
 				location: 'Santa Marta, Colombia',
 				description:
 					'Liderazgo tecnológico completo para la administración del alumbrado público de Santa Marta. Diseño y desarrollo de plataforma web, aplicación móvil y sistemas de gestión operativa.',

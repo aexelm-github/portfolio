@@ -139,6 +139,11 @@ export const en = {
 		captures: 'screenshots',
 		items: [
 			{
+				id: 'grupoenercas',
+				title: 'GrupoEnercas Website',
+				desc: 'Corporate website developed for GrupoEnercas through NeedCrave, presenting the company, its services and its projects.'
+			},
+			{
 				id: 'simplify2',
 				title: 'Simplify2+',
 				desc: 'SaaS platform for cross-referencing and analyzing data across multiple databases with interactive dashboards.'
@@ -215,7 +220,7 @@ export const en = {
 				id: 'conlus-dir',
 				role: 'Technology Director',
 				company: 'Consorcio Santa Marta Iluminada y Segura (CONLUS)',
-				period: '2020 — Present',
+				period: '2020 — May 2026',
 				location: 'Santa Marta, Colombia',
 				description:
 					'Full technology leadership for public lighting management in Santa Marta. Design and development of web platform, mobile app and operational management systems.',
