@@ -106,6 +106,21 @@ export const en = {
 				color: '#a855f7'
 			},
 			{
+				id: 'app-consulta',
+				title: 'app-consulta (Appencuesta)',
+				company: 'Ágora S.A.S.',
+				category: 'Analytics · Geolocated Surveys',
+				description:
+					'Platform to analyze geolocated surveys and population studies: researchers drag questions and answers to build queries and get results as 2D and 3D charts, GPS maps and Word documents, without writing SQL.',
+				impact:
+					'Catalog of 180+ studies, each in its own database, with results on maps and 3D charts built from GPS field surveys.',
+				tags: ['Geolocation', 'Surveys', '3D charts', 'Multi-database', 'Role-based access'],
+				stack: ['Svelte', 'Express', 'MySQL', 'Google Maps'],
+				repo: 'https://github.com/aexelm-github/app-consulta-showcase',
+				featured: false,
+				color: '#f43f5e'
+			},
+			{
 				id: 'conlus',
 				title: 'Public Lighting Platform',
 				company: 'CONLUS — Santa Marta Iluminada',

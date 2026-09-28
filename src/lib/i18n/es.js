@@ -106,6 +106,21 @@ export const es = {
 				color: '#a855f7'
 			},
 			{
+				id: 'app-consulta',
+				title: 'app-consulta (Appencuesta)',
+				company: 'Ágora S.A.S.',
+				category: 'Analítica · Encuestas georreferenciadas',
+				description:
+					'Plataforma para analizar encuestas y estudios poblacionales georreferenciados: el investigador arrastra preguntas y respuestas para armar consultas y obtiene resultados en gráficos 2D y 3D, mapas con GPS y documentos Word, sin escribir SQL.',
+				impact:
+					'Catálogo de más de 180 estudios, cada uno en su propia base de datos, con resultados sobre mapa y gráficos 3D a partir de encuestas de campo con GPS.',
+				tags: ['Georreferenciación', 'Encuestas', 'Gráficos 3D', 'Multi-base', 'Permisos por perfil'],
+				stack: ['Svelte', 'Express', 'MySQL', 'Google Maps'],
+				repo: 'https://github.com/aexelm-github/app-consulta-showcase',
+				featured: false,
+				color: '#f43f5e'
+			},
+			{
 				id: 'conlus',
 				title: 'Plataforma de Alumbrado Público',
 				company: 'CONLUS — Santa Marta Iluminada',

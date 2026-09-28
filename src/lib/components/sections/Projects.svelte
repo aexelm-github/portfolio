@@ -150,7 +150,44 @@
 				<rect x="326" y="62" width="44" height="20" rx="3" fill="rgba(16,185,129,0.08)"/>
 				<rect x="328" y="78" width="36" height="2" rx="1" fill="#475569" opacity="0.3"/>
 			</svg>`,
-		'ap-pilot': `
+		'app-consulta': `
+				<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+					<defs>
+						<linearGradient id="g6" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%" style="stop-color:#f43f5e;stop-opacity:0.13"/>
+							<stop offset="100%" style="stop-color:#be123c;stop-opacity:0.04"/>
+						</linearGradient>
+					</defs>
+					<rect width="400" height="220" fill="url(#g6)" rx="8"/>
+					<!-- Map panel -->
+					<rect x="20" y="20" width="210" height="180" rx="8" fill="rgba(10,10,15,0.75)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
+					<g opacity="0.15">
+						<line x1="20" y1="75" x2="230" y2="75" stroke="#f43f5e" stroke-width="0.5"/>
+						<line x1="20" y1="130" x2="230" y2="130" stroke="#f43f5e" stroke-width="0.5"/>
+						<line x1="90" y1="20" x2="90" y2="200" stroke="#f43f5e" stroke-width="0.5"/>
+						<line x1="160" y1="20" x2="160" y2="200" stroke="#f43f5e" stroke-width="0.5"/>
+					</g>
+					<!-- GPS point clusters, colored by group -->
+					<g fill="#22d3ee" opacity="0.85"><rect x="52" y="52" width="6" height="6" transform="rotate(45 55 55)"/><rect x="62" y="60" width="6" height="6" transform="rotate(45 65 63)"/><rect x="48" y="68" width="6" height="6" transform="rotate(45 51 71)"/><rect x="70" y="74" width="6" height="6" transform="rotate(45 73 77)"/></g>
+					<g fill="#e879f9" opacity="0.85"><rect x="110" y="100" width="6" height="6" transform="rotate(45 113 103)"/><rect x="120" y="112" width="6" height="6" transform="rotate(45 123 115)"/><rect x="104" y="120" width="6" height="6" transform="rotate(45 107 123)"/><rect x="128" y="126" width="6" height="6" transform="rotate(45 131 129)"/><rect x="116" y="136" width="6" height="6" transform="rotate(45 119 139)"/></g>
+					<g fill="#facc15" opacity="0.85"><rect x="170" y="60" width="6" height="6" transform="rotate(45 173 63)"/><rect x="182" y="68" width="6" height="6" transform="rotate(45 185 71)"/><rect x="176" y="80" width="6" height="6" transform="rotate(45 179 83)"/></g>
+					<g fill="#4ade80" opacity="0.85"><rect x="180" y="140" width="6" height="6" transform="rotate(45 183 143)"/><rect x="192" y="150" width="6" height="6" transform="rotate(45 195 153)"/><rect x="170" y="156" width="6" height="6" transform="rotate(45 173 159)"/></g>
+					<g fill="#60a5fa" opacity="0.85"><rect x="60" y="150" width="6" height="6" transform="rotate(45 63 153)"/><rect x="72" y="162" width="6" height="6" transform="rotate(45 75 165)"/></g>
+					<!-- Legend -->
+					<rect x="30" y="30" width="46" height="8" rx="2" fill="rgba(255,255,255,0.08)"/>
+					<!-- Bar chart panel -->
+					<rect x="246" y="20" width="134" height="180" rx="8" fill="rgba(10,10,15,0.75)" stroke="rgba(244,63,94,0.25)" stroke-width="1"/>
+					<rect x="258" y="32" width="60" height="4" rx="2" fill="#f43f5e" opacity="0.7"/>
+					<rect x="262" y="150" width="16" height="26" rx="2" fill="#22d3ee" opacity="0.7"/>
+					<rect x="284" y="120" width="16" height="56" rx="2" fill="#e879f9" opacity="0.7"/>
+					<rect x="306" y="90" width="16" height="86" rx="2" fill="#facc15" opacity="0.7"/>
+					<rect x="328" y="132" width="16" height="44" rx="2" fill="#4ade80" opacity="0.7"/>
+					<rect x="350" y="70" width="16" height="106" rx="2" fill="#60a5fa" opacity="0.7"/>
+					<line x1="256" y1="178" x2="372" y2="178" stroke="#475569" stroke-width="1" opacity="0.6"/>
+					<rect x="258" y="186" width="34" height="3" rx="1.5" fill="#475569" opacity="0.5"/>
+					<rect x="300" y="186" width="24" height="3" rx="1.5" fill="#475569" opacity="0.5"/>
+				</svg>`,
+			'ap-pilot': `
 				<svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
 					<defs>
 						<linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="100%">
